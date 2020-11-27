@@ -31,7 +31,8 @@ public:
 	void rect_mode();
 
 	Vector operator+(const Vector& b) const;
-	void operator-(const Vector& b) const;
+	Vector operator-(const Vector& b) const;
+	Vector operator-() const;
 	Vector operator*(double n) const;
 
 	friend Vector operator*(double n, const Vector& a);
